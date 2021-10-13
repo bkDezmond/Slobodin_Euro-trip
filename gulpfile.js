@@ -12,9 +12,9 @@ const sync = require("browser-sync").create();
 const del = require("del");
 const webp = require("gulp-webp");
 const htmlmin = require("gulp-htmlmin");
-const jsminify = require("gulp-uglify");
-const cssmin = require('gulp-cssmin');
-const cleanCSS = require('gulp-clean-css');
+const jsminify = require("gulp-terser");
+const cssmin = require("gulp-cssmin");
+const cleanCSS = require("gulp-clean-css");
 
 //del
 
@@ -51,7 +51,6 @@ const styles = () => {
 };
 
 exports.styles = styles;
-
 
 //svg
 

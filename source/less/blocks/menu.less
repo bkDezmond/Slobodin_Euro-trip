@@ -1,0 +1,56 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin: 30px;
+  padding: 0;
+}
+
+.menu__item {
+  margin: 10px;
+  margin-left: 35px;
+  margin-right: 25px;
+  list-style: none;
+
+  &--logo {
+    padding-right: 400px;
+  }
+}
+
+.menu__link {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: @basic-dark;
+
+  &--travel,
+  &--price {
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.menu__link svg {
+  position: absolute;
+  bottom: -3px;
+  right: 150px;
+}
+
+.menu__toggle {
+  display: none;
+
+  @media (max-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
+}

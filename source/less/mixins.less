@@ -1,14 +1,14 @@
 .container {
-  width: 87.5%;
+  max-width: 1170px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    width: 93.3%;
+  @media (max-width: @tablet-width) {
+    max-width: 93%;
     margin: 0 auto;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 940px;
+  @media (max-width: @mobile-width) {
+    max-width: 87.5%;
     margin: 0 auto;
   }
 }

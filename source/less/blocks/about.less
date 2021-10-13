@@ -1,0 +1,164 @@
+.about {
+  background-image: url("../img/about-background.svg");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: 102px;
+  background-position-y: 120px;
+}
+
+.about__wrapper {
+  margin-bottom: 250px;
+}
+
+.about__list {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 670px;
+  min-height: 610px;
+}
+
+.about__list-items {
+  position: relative;
+  margin-left: 0;
+  margin-right: 65px;
+}
+
+.about__list-link {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  color: @basic-gray;
+  opacity: 0.3;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 150px;
+
+  &--active {
+    color: @basic-red;
+    opacity: 1;
+  }
+}
+
+.about__item {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  width: 900px;
+  margin-top: 70px;
+
+  &--albania {
+    left: -170px;
+  }
+
+  &--macedonia {
+    left: -360px;
+  }
+
+  &--montenegro {
+    right: -160px;
+  }
+
+  &--croatia {
+    position: absolute;
+    right: 30px;
+  }
+}
+
+.about__title {
+  font-size: 55px;
+  font-weight: 600;
+  width: 175px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid @basic-red;
+}
+
+.about__description {
+  text-align: Left;
+  font-style: normal;
+  line-height: 28px;
+  width: 390px;
+  text-align: left;
+  color: @basic-gray;
+  opacity: 0.7;
+  margin-right: 10px;
+}
+
+.about__feedback {
+  position: absolute;
+  left: 88%;
+  bottom: 21%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: @basic-white;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  margin-top: 150px;
+  width: 300px;
+  height: 355px;
+}
+
+.about__feedback-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.about__feedback-text {
+  margin: 0px;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+.about__picture {
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.about__buy-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 250px;
+  height: 75px;
+  color: @basic-white;
+  background-color: @basic-red;
+  border: none;
+  cursor: pointer;
+}
+
+.about__feedback-author {
+  position: relative;
+  margin-left: 60px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  color: @basic-dark;
+}
+
+.about__feedback-author img {
+  position: absolute;
+  left: -60px;
+  bottom: -5px;
+}

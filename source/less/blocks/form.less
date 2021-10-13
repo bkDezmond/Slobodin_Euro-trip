@@ -1,0 +1,81 @@
+.form__wrapper {
+  position: relative;
+  height: 455px;
+  margin-bottom: 150px;
+  background-image: url("../img/seeAndSky.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.form__contacts {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 315px;
+  background-color: @basic-white;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px @basic-shadow;
+}
+
+.form__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px;
+  color: @basic-dark;
+}
+
+.form__text {
+  line-height: 24px;
+  color: @basic-dark;
+}
+
+.form__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 176px;
+  height: 50px;
+  color: @basic-white;
+  background-color: @basic-red;
+  border: none;
+  cursor: pointer;
+}
+
+.form__inputs {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.form__input {
+  width: 230px;
+  height: 50px;
+  border: 2px solid @basic-black-opacity;
+}
+
+.form__input[placeholder] {
+  color: @basic-dark;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+}
+
+.form__input[type="tel"]::placeholder,
+.form__input[type="email"]::placeholder {
+  color: @basic-dark;
+}
